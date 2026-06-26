@@ -47,7 +47,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "10MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -68,7 +68,7 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "options": {
-            "port": 4444 
+            "port": 4444
           },
           "configurations": {
             "production": {
