@@ -1,0 +1,10 @@
+name: exploring-geodata-interface
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:80"
+    restart: unless-stopped

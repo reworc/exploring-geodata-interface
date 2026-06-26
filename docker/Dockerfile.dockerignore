@@ -7,5 +7,7 @@ node_modules
 npm-debug.log
 Dockerfile
 docker-compose.yml
+docker/Dockerfile
+docker/Dockerfile.dockerignore
+docker/docker-compose.yml
 README.md
-
