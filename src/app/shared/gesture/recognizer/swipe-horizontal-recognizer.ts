@@ -35,10 +35,11 @@ export class SwipeHorizontalRecognizer implements GestureRecognizer {
     const dx = last.x - first.x;
     const dy = last.y - first.y;
     const dtMs = (last.timeMs - first.timeMs);
+    // console.log(dx, Math.abs(dx), dy, Math.abs(dy), dtMs);
 
-    if (dtMs > this.maxDurationMs) return []; // too slow
-    if (Math.abs(dy) > this.maxVerticalDelta) return []; // not horizontal
-    if (Math.abs(dx) < this.minHorizontalDelta) return []; // too small
+    if (dtMs > this.maxDurationMs) { return []; } // too slow
+    if (Math.abs(dy) > this.maxVerticalDelta) { return []; } // not horizontal
+    if (Math.abs(dx) < this.minHorizontalDelta) { return []; } // too small
 
     const angle = Math.atan2(dy, dx);
     this.cooldownUntil = frame.timeMs + this.cooldownMs;

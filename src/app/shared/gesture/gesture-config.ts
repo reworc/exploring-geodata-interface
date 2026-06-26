@@ -3,21 +3,21 @@ export const gestureConfig = {
   historyWindowMs: 2000,
   swipeHorizontal: {
     // Maximum swipe duration; longer gestures are ignored.
-    maxDurationMs: 1500,
+    maxDurationMs: 3000,
     // Max allowed vertical movement to still be considered horizontal.
     maxVerticalDelta: 0.2,
     // Minimum horizontal movement required to trigger a swipe.
-    minHorizontalDelta: 0.6,
+    minHorizontalDelta: 0.35,
     // Cooldown after a swipe is recognized to avoid repeated triggers.
     cooldownMs: 600
   },
   swipeVertical: {
     // Maximum swipe duration; longer gestures are ignored.
-    maxDurationMs: 1500,
+    maxDurationMs: 3000,
     // Max allowed horizontal movement to still be considered vertical.
     maxHorizontalDelta: 0.2,
     // Minimum vertical movement required to trigger a top-to-bottom swipe.
-    minVerticalDelta: 0.6,
+    minVerticalDelta: 0.3,
     // Cooldown after a swipe is recognized to avoid repeated triggers.
     cooldownMs: 400
   },
